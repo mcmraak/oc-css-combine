@@ -1,9 +1,9 @@
 plugin:
     name: 'zen.combine::lang.plugin.name'
     description: 'zen.combine::lang.plugin.description'
-    author: 'Александр Аблизин'
+    author: 'Alexander Ablizin'
     icon: oc-icon-rocket
-    homepage: ''
+    homepage: 'https://october-studio.ru'
 permissions:
     zen.combine.open:
         tab: 'CSS combine'
