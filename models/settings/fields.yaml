@@ -1,0 +1,18 @@
+fields:
+    combine:
+        label: 'Combine and minify'
+        span: full
+        default: 1
+        type: switch
+    css_update:
+        label: Autoupdate
+        span: auto
+        default: 1
+        type: switch
+    css_list:
+        label: 'CSS Files'
+        oc.commentPosition: ''
+        size: giant
+        language: php
+        span: full
+        type: codeeditor
