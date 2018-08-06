@@ -1,6 +1,7 @@
 # CSS Combine
-write links to css files relative to the theme folder
+Write links to css files relative to the theme folder:
 
+![image](https://raw.githubusercontent.com/mcmraak/oc-css-combine/master/assets/images/docs-links.png)
 ### Settings combination
 The settings have two parameters: "Combine and minify" and "Autoupdate". The combination of these parameters creates different effects:
 
