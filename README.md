@@ -1,4 +1,9 @@
 # CSS Combine
+
+Place the component above the "{% styles %}" tag:
+
+![image](https://raw.githubusercontent.com/mcmraak/oc-css-combine/master/assets/images/docs-component.png)
+
 Write links to css files relative to the theme folder:
 
 ![image](https://raw.githubusercontent.com/mcmraak/oc-css-combine/master/assets/images/docs-links.png)
