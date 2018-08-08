@@ -11,8 +11,7 @@ fields:
         type: switch
     css_list:
         label: 'CSS Files'
-        oc.commentPosition: ''
         size: giant
-        language: php
+        language: plain_text
         span: full
         type: codeeditor
