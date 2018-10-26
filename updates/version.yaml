@@ -4,3 +4,5 @@
     - Fix repository.
 1.0.3:
     - Change settings field type.
+1.0.4:
+    - Add comment line with '#', warnings instead of an error when there is file not exist

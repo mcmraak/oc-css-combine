@@ -15,3 +15,7 @@ fields:
         language: plain_text
         span: full
         type: codeeditor
+    hint1:
+        span: full
+        path: $/zen/combine/models/settings/hint.htm
+        type: hint
