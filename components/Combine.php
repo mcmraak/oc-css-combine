@@ -3,6 +3,7 @@
 use Cms\Classes\ComponentBase;
 use Zen\Combine\Controllers\Combine as CombineController;
 use Zen\Combine\Models\Settings;
+use Request;
 
 class Combine extends ComponentBase
 {
@@ -29,11 +30,27 @@ class Combine extends ComponentBase
             $this->page['css_list'] = [$combine['theme_path'] .'assets/css/combine.css'];
         } else {
             $combine = CombineController::buildCombine($css_update);
+            $domain = $this->getDomain();
+
             $clean_list = [];
             foreach ($combine['css_list'] as $item){
-                $clean_list[] = $combine['theme_path'] . trim($item);
+                if(preg_match('/^\/(.*)/', $item)) {
+                    $clean_list[] = $domain.trim($item);
+                } else {
+                    $clean_list[] = $domain.$combine['theme_path'] . trim($item);
+                }
             }
             $this->page['css_list'] = $clean_list;
+        }
+    }
+
+    public function getDomain ()
+    {
+        if (Request::secure())
+        {
+            return 'https://'.$_SERVER['HTTP_HOST'];
+        } else {
+            return 'http://'.$_SERVER['HTTP_HOST'];
         }
     }
 }

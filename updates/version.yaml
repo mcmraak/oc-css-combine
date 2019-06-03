@@ -6,3 +6,6 @@
     - Change settings field type.
 1.0.4:
     - Add comment line with '#', warnings instead of an error when there is file not exist
+1.0.5:
+    - Сanonical links for css files (with domain name), Links that begin with a slash are
+    - considered absolute and not relative to the theme.
