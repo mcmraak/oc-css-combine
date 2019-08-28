@@ -9,3 +9,5 @@
 1.0.5:
     - Сanonical links for css files (with domain name), Links that begin with a slash are
     - considered absolute and not relative to the theme.
+1.0.5:
+    - Changed minify algorithm
